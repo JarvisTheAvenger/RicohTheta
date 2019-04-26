@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B84633E2302F9A5C6F51FB1 /* Pods_SkywardCapture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED29F61E23259B69C6EED14A /* Pods_SkywardCapture.framework */; };
+		8C1A1A7E225F484700635564 /* RicohImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A1A7D225F484700635564 /* RicohImage.swift */; };
+		8C1A1A80225F4E2F00635564 /* RicohImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A1A7F225F4E2F00635564 /* RicohImageTableViewCell.swift */; };
+		8C76B5B7225B6A3300907CD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C76B5B6225B6A3300907CD5 /* AppDelegate.swift */; };
+		8C76B5BC225B6A3300907CD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C76B5BA225B6A3300907CD5 /* Main.storyboard */; };
+		8C76B5BE225B6A3500907CD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C76B5BD225B6A3500907CD5 /* Assets.xcassets */; };
+		8C76B5C1225B6A3500907CD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C76B5BF225B6A3500907CD5 /* LaunchScreen.storyboard */; };
+		8C76B5C9225B6AF300907CD5 /* SWCaptureListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C76B5C8225B6AF300907CD5 /* SWCaptureListVC.swift */; };
+		8C76B5CB225B6B2600907CD5 /* SWCaptureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C76B5CA225B6B2600907CD5 /* SWCaptureVC.swift */; };
+		8C76B5CD225C657400907CD5 /* SWHotspotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C76B5CC225C657400907CD5 /* SWHotspotVC.swift */; };
+		8C76B5EA225C699300907CD5 /* HttpConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C76B5D1225C699200907CD5 /* HttpConnection.m */; };
+		8C76B5EB225C699300907CD5 /* HttpSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C76B5D4225C699200907CD5 /* HttpSession.m */; };
+		8C76B5EC225C699300907CD5 /* HttpStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C76B5D6225C699300907CD5 /* HttpStream.m */; };
+		8C76B5ED225C699300907CD5 /* HttpImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C76B5D7225C699300907CD5 /* HttpImageInfo.m */; };
+		8C76B5EE225C699300907CD5 /* HttpDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C76B5D9225C699300907CD5 /* HttpDeviceInfo.m */; };
+		8C76B5EF225C699300907CD5 /* HttpStorageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C76B5DA225C699300907CD5 /* HttpStorageInfo.m */; };
+		8C76B5F4225C699300907CD5 /* HttpStatusTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C76B5E6225C699300907CD5 /* HttpStatusTimer.m */; };
+		8C76B5F5225C699300907CD5 /* HttpFileList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C76B5E8225C699300907CD5 /* HttpFileList.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8C1A1A7D225F484700635564 /* RicohImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RicohImage.swift; sourceTree = "<group>"; };
+		8C1A1A7F225F4E2F00635564 /* RicohImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RicohImageTableViewCell.swift; sourceTree = "<group>"; };
+		8C76B5B3225B6A3300907CD5 /* SkywardCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkywardCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C76B5B6225B6A3300907CD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8C76B5BB225B6A3300907CD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C76B5BD225B6A3500907CD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C76B5C0225B6A3500907CD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C76B5C2225B6A3500907CD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C76B5C8225B6AF300907CD5 /* SWCaptureListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCaptureListVC.swift; sourceTree = "<group>"; };
+		8C76B5CA225B6B2600907CD5 /* SWCaptureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCaptureVC.swift; sourceTree = "<group>"; };
+		8C76B5CC225C657400907CD5 /* SWHotspotVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWHotspotVC.swift; sourceTree = "<group>"; };
+		8C76B5CF225C699200907CD5 /* SkywardCapture-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SkywardCapture-Bridging-Header.h"; sourceTree = "<group>"; };
+		8C76B5D0225C699200907CD5 /* HttpDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpDeviceInfo.h; sourceTree = "<group>"; };
+		8C76B5D1225C699200907CD5 /* HttpConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpConnection.m; sourceTree = "<group>"; };
+		8C76B5D2225C699200907CD5 /* HttpSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpSession.h; sourceTree = "<group>"; };
+		8C76B5D3225C699200907CD5 /* HttpImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpImageInfo.h; sourceTree = "<group>"; };
+		8C76B5D4225C699200907CD5 /* HttpSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpSession.m; sourceTree = "<group>"; };
+		8C76B5D5225C699200907CD5 /* HttpStorageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpStorageInfo.h; sourceTree = "<group>"; };
+		8C76B5D6225C699300907CD5 /* HttpStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpStream.m; sourceTree = "<group>"; };
+		8C76B5D7225C699300907CD5 /* HttpImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpImageInfo.m; sourceTree = "<group>"; };
+		8C76B5D8225C699300907CD5 /* HttpFileList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpFileList.h; sourceTree = "<group>"; };
+		8C76B5D9225C699300907CD5 /* HttpDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpDeviceInfo.m; sourceTree = "<group>"; };
+		8C76B5DA225C699300907CD5 /* HttpStorageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpStorageInfo.m; sourceTree = "<group>"; };
+		8C76B5DB225C699300907CD5 /* HttpStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpStream.h; sourceTree = "<group>"; };
+		8C76B5E6225C699300907CD5 /* HttpStatusTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpStatusTimer.m; sourceTree = "<group>"; };
+		8C76B5E7225C699300907CD5 /* HttpConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpConnection.h; sourceTree = "<group>"; };
+		8C76B5E8225C699300907CD5 /* HttpFileList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpFileList.m; sourceTree = "<group>"; };
+		8C76B5E9225C699300907CD5 /* HttpStatusTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpStatusTimer.h; sourceTree = "<group>"; };
+		CD015605879CEF5B7E507783 /* Pods-SkywardCapture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkywardCapture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkywardCapture/Pods-SkywardCapture.debug.xcconfig"; sourceTree = "<group>"; };
+		E0A2CEC7E6488D6A30D8D3FC /* Pods-SkywardCapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkywardCapture.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkywardCapture/Pods-SkywardCapture.release.xcconfig"; sourceTree = "<group>"; };
+		ED29F61E23259B69C6EED14A /* Pods_SkywardCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkywardCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C76B5B0225B6A3300907CD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B84633E2302F9A5C6F51FB1 /* Pods_SkywardCapture.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65FB377D40EBB05E1104DB0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED29F61E23259B69C6EED14A /* Pods_SkywardCapture.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C1A1A7C225F482200635564 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C1A1A7D225F484700635564 /* RicohImage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8C1A1A81225F535F00635564 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8C76B5BA225B6A3300907CD5 /* Main.storyboard */,
+				8C76B5BF225B6A3500907CD5 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8C1A1A82225F536B00635564 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8C76B5BD225B6A3500907CD5 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		8C1A1A83225F537A00635564 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C76B5C8225B6AF300907CD5 /* SWCaptureListVC.swift */,
+				8C76B5CA225B6B2600907CD5 /* SWCaptureVC.swift */,
+				8C76B5CC225C657400907CD5 /* SWHotspotVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8C1A1A84225F538600635564 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8C1A1A7F225F4E2F00635564 /* RicohImageTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		8C76B5AA225B6A3300907CD5 = {
+			isa = PBXGroup;
+			children = (
+				8C76B5B5225B6A3300907CD5 /* SkywardCapture */,
+				8C76B5B4225B6A3300907CD5 /* Products */,
+				F668C3FCB84E9A8867B1AE10 /* Pods */,
+				65FB377D40EBB05E1104DB0C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8C76B5B4225B6A3300907CD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C76B5B3225B6A3300907CD5 /* SkywardCapture.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C76B5B5225B6A3300907CD5 /* SkywardCapture */ = {
+			isa = PBXGroup;
+			children = (
+				8C76B5B6225B6A3300907CD5 /* AppDelegate.swift */,
+				8C1A1A83225F537A00635564 /* ViewController */,
+				8C1A1A84225F538600635564 /* TableViewCell */,
+				8C1A1A7C225F482200635564 /* Model */,
+				8C1A1A81225F535F00635564 /* View */,
+				8C1A1A82225F536B00635564 /* Resource */,
+				8C76B5C2225B6A3500907CD5 /* Info.plist */,
+				8C76B5CE225C697800907CD5 /* RicohHTTP */,
+			);
+			path = SkywardCapture;
+			sourceTree = "<group>";
+		};
+		8C76B5CE225C697800907CD5 /* RicohHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				8C76B5E7225C699300907CD5 /* HttpConnection.h */,
+				8C76B5D1225C699200907CD5 /* HttpConnection.m */,
+				8C76B5D0225C699200907CD5 /* HttpDeviceInfo.h */,
+				8C76B5D9225C699300907CD5 /* HttpDeviceInfo.m */,
+				8C76B5D8225C699300907CD5 /* HttpFileList.h */,
+				8C76B5E8225C699300907CD5 /* HttpFileList.m */,
+				8C76B5D3225C699200907CD5 /* HttpImageInfo.h */,
+				8C76B5D7225C699300907CD5 /* HttpImageInfo.m */,
+				8C76B5D2225C699200907CD5 /* HttpSession.h */,
+				8C76B5D4225C699200907CD5 /* HttpSession.m */,
+				8C76B5E9225C699300907CD5 /* HttpStatusTimer.h */,
+				8C76B5E6225C699300907CD5 /* HttpStatusTimer.m */,
+				8C76B5D5225C699200907CD5 /* HttpStorageInfo.h */,
+				8C76B5DA225C699300907CD5 /* HttpStorageInfo.m */,
+				8C76B5DB225C699300907CD5 /* HttpStream.h */,
+				8C76B5D6225C699300907CD5 /* HttpStream.m */,
+				8C76B5CF225C699200907CD5 /* SkywardCapture-Bridging-Header.h */,
+			);
+			path = RicohHTTP;
+			sourceTree = "<group>";
+		};
+		F668C3FCB84E9A8867B1AE10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD015605879CEF5B7E507783 /* Pods-SkywardCapture.debug.xcconfig */,
+				E0A2CEC7E6488D6A30D8D3FC /* Pods-SkywardCapture.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C76B5B2225B6A3300907CD5 /* SkywardCapture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C76B5C5225B6A3500907CD5 /* Build configuration list for PBXNativeTarget "SkywardCapture" */;
+			buildPhases = (
+				34A65AAD581E48CC7B568C1E /* [CP] Check Pods Manifest.lock */,
+				8C76B5AF225B6A3300907CD5 /* Sources */,
+				8C76B5B0225B6A3300907CD5 /* Frameworks */,
+				8C76B5B1225B6A3300907CD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkywardCapture;
+			productName = SkywardCapture;
+			productReference = 8C76B5B3225B6A3300907CD5 /* SkywardCapture.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C76B5AB225B6A3300907CD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Rahul Umap";
+				TargetAttributes = {
+					8C76B5B2225B6A3300907CD5 = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 8C76B5AE225B6A3300907CD5 /* Build configuration list for PBXProject "SkywardCapture" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C76B5AA225B6A3300907CD5;
+			productRefGroup = 8C76B5B4225B6A3300907CD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C76B5B2225B6A3300907CD5 /* SkywardCapture */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C76B5B1225B6A3300907CD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C76B5C1225B6A3500907CD5 /* LaunchScreen.storyboard in Resources */,
+				8C76B5BE225B6A3500907CD5 /* Assets.xcassets in Resources */,
+				8C76B5BC225B6A3300907CD5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34A65AAD581E48CC7B568C1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkywardCapture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C76B5AF225B6A3300907CD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C76B5EE225C699300907CD5 /* HttpDeviceInfo.m in Sources */,
+				8C76B5CD225C657400907CD5 /* SWHotspotVC.swift in Sources */,
+				8C76B5ED225C699300907CD5 /* HttpImageInfo.m in Sources */,
+				8C76B5C9225B6AF300907CD5 /* SWCaptureListVC.swift in Sources */,
+				8C76B5F5225C699300907CD5 /* HttpFileList.m in Sources */,
+				8C76B5EB225C699300907CD5 /* HttpSession.m in Sources */,
+				8C76B5EC225C699300907CD5 /* HttpStream.m in Sources */,
+				8C76B5B7225B6A3300907CD5 /* AppDelegate.swift in Sources */,
+				8C1A1A7E225F484700635564 /* RicohImage.swift in Sources */,
+				8C1A1A80225F4E2F00635564 /* RicohImageTableViewCell.swift in Sources */,
+				8C76B5EA225C699300907CD5 /* HttpConnection.m in Sources */,
+				8C76B5CB225B6B2600907CD5 /* SWCaptureVC.swift in Sources */,
+				8C76B5EF225C699300907CD5 /* HttpStorageInfo.m in Sources */,
+				8C76B5F4225C699300907CD5 /* HttpStatusTimer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8C76B5BA225B6A3300907CD5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C76B5BB225B6A3300907CD5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C76B5BF225B6A3500907CD5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C76B5C0225B6A3500907CD5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C76B5C3225B6A3500907CD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C76B5C4225B6A3500907CD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C76B5C6225B6A3500907CD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD015605879CEF5B7E507783 /* Pods-SkywardCapture.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E643U2KPYB;
+				INFOPLIST_FILE = SkywardCapture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewalla.SkywardCapture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SkywardCapture/RicohHTTP/SkywardCapture-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C76B5C7225B6A3500907CD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0A2CEC7E6488D6A30D8D3FC /* Pods-SkywardCapture.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E643U2KPYB;
+				INFOPLIST_FILE = SkywardCapture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewalla.SkywardCapture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SkywardCapture/RicohHTTP/SkywardCapture-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C76B5AE225B6A3300907CD5 /* Build configuration list for PBXProject "SkywardCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C76B5C3225B6A3500907CD5 /* Debug */,
+				8C76B5C4225B6A3500907CD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C76B5C5225B6A3500907CD5 /* Build configuration list for PBXNativeTarget "SkywardCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C76B5C6225B6A3500907CD5 /* Debug */,
+				8C76B5C7225B6A3500907CD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C76B5AB225B6A3300907CD5 /* Project object */;
+}
